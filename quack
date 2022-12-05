@@ -20,7 +20,7 @@
         <div id="context">
             <h3>Click anywhere! :)</h3>
         </div>
-        <audio id="audio" src=""></audio>;
+        <audio id="audio" src="https://github.com/MatumbaBuuz/quack/blob/main/Quack%20Sound%20Effect.mp3"></audio>;
     </body>
     <script>
         function play() {
