@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mona Lisa</title>
+        <style>
+            html,
+            body {
+                overflow: hidden;
+            }
+            #context {
+                height: 100vh;
+                width: 100vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="context">
+            <h3>Click anywhere! :)</h3>
+        </div>
+        <audio id="audio" src=""></audio>;
+    </body>
+    <script>
+        function play() {
+            var audio = document.getElementById("audio");
+            audio.play();
+        }
+
+        document.addEventListener("mousedown", play);
+    </script>
+</html>
