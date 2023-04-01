@@ -1,33 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Mona Lisa</title>
-        <style>
-            html,
-            body {
-                overflow: hidden;
-            }
-            #context {
-                height: 100vh;
-                width: 100vw;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="context">
-            <h3>Click anywhere! :)</h3>
-        </div>
-        <audio id="audio" src="https://github.com/MatumbaBuuz/quack/blob/49b72c582baf9cd1a0f07c1cf642bf6376f81c0a/Quack%20Sound%20Effect%20(2).mp3?raw=true"></audio>;
-    </body>
-    <script>
-        function play() {
-            var audio = document.getElementById("audio");
-            audio.play();
-        }
+<head>
+	<title>Play Video on Mouse Click</title>
+</head>
+<body>
 
-        document.addEventListener("mousedown", play);
-    </script>
+	<!-- Video Element -->
+	<video id="myVideo" width="640" height="360" src="" controls></video>
+
+	<!-- JavaScript Code -->
+	<script>
+		// Get Video Element
+		var video = document.getElementById("myVideo");
+
+		// Set Video URL
+		video.src = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+
+		// Play Video on Mouse Click
+		video.onclick = function() {
+			video.play();
+		};
+	</script>
+
+</body>
 </html>
