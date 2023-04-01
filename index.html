@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Play Video on Mouse Click</title>
-</head>
-<body>
-
-	<!-- Video Element -->
-	<video id="myVideo" width="640" height="360" src="" controls></video>
-
-	<!-- JavaScript Code -->
-	<script>
-		// Get Video Element
-		var video = document.getElementById("myVideo");
-
-		// Set Video URL
-		video.src = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-
-		// Play Video on Mouse Click
-		video.onclick = function() {
-			video.play();
-		};
-	</script>
-
-</body>
+  <head>
+    <title>Rick Astley - Never Gonna Give You Up</title>
+    <style>
+      /* Center the button horizontally and vertically */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="playAudio()">Click me :D</button>
+    <audio id="audioPlayer">
+      <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+      <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <script>
+      function playAudio() {
+        var audio = document.getElementById("audioPlayer");
+        audio.play();
+      }
+    </script>
+  </body>
 </html>
